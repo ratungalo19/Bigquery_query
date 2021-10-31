@@ -7,5 +7,5 @@ SELECT
   EXTRACT(MONTH FROM date) AS month
 FROM ecommerce.days_with_rain
 WHERE station_name = 'WAKAYAMA' #Japan
-GROUP BY station_name, date, today, month, partition_age
+GROUP BY station_name, date, today, month
 ORDER BY partition_age DESC
